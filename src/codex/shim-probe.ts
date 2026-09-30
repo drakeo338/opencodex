@@ -253,6 +253,7 @@ function probeUnixShimInstall(wrapperPath: string): UnixShimProbeResult {
   const env: NodeJS.ProcessEnv = {
     ...process.env,
     OCX_SHIM_BYPASS: "1",
+    BUN_BE_BUN: "1",
     OCX_SHIM_PROBE: "1",
     OCX_SHIM_PROBE_REENTRY_PATH: reentryPath,
   };
